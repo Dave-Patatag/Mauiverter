@@ -1,4 +1,6 @@
-﻿namespace Maui_Converter
+﻿using Maui_Converter.MVVM.Views;
+
+namespace Maui_Converter
 {
     public partial class App : Application
     {
@@ -9,7 +11,9 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new MainPage());
+            var navPage = new NavigationPage(new MenuView());
+
+            return new Window(navPage);
         }
     }
 }

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_Converter.MVVM.Views.InformationPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="Auto,*,*" Padding="0">
+
+        
+        <Grid Grid.Row="0"
+              BackgroundColor="#9C27B0"
+              Padding="16"
+              ColumnDefinitions="Auto,*">
+
+            <Button Text="←"
+                    FontSize="24"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Padding="8"
+                    Clicked="OnBackClicked"
+                    VerticalOptions="Center"/>
+
+            <Label Grid.Column="1"
+                   Text="Information"
+                   FontSize="28"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+            
+        </Grid>
+
+        <!-- Bit Section -->
+        <Grid Grid.Row="1"
+              BackgroundColor="LightGreen"
+              Padding="20"
+              RowDefinitions="*,Auto">
+
+            <Label x:Name="BitValue"
+                   Text="1"
+                   FontSize="64"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Picker x:Name="BitPicker"
+                    Grid.Row="1"
+                    Title="Bit"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    TitleColor="Black"
+                    HorizontalOptions="Fill"
+                    Margin="0,12,0,0">
+                <Picker.Items>
+                    <x:String>Bit</x:String>
+                    <x:String>Kilobit</x:String>
+                    <x:String>Megabit</x:String>
+                </Picker.Items>
+            </Picker>
+        </Grid>
+
+        <!-- Byte Section -->
+        <Grid Grid.Row="2"
+              BackgroundColor="#FFEDA9"
+              Padding="20"
+              RowDefinitions="*,Auto">
+
+            <Label x:Name="ByteValue"
+                   Text="0.13"
+                   FontSize="64"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Picker x:Name="BytePicker"
+                    Grid.Row="1"
+                    Title="Byte"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    TitleColor="Black"
+                    HorizontalOptions="Fill"
+                    Margin="0,12,0,0">
+                <Picker.Items>
+                    <x:String>Byte</x:String>
+                    <x:String>Kilobyte</x:String>
+                    <x:String>Megabyte</x:String>
+                </Picker.Items>
+            </Picker>
+        </Grid>
+
+    </Grid>
+</ContentPage>
