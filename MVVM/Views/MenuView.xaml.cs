@@ -13,4 +13,9 @@ public partial class MenuView : ContentPage
     {
         await Navigation.PushAsync(new InformationPage());
     }
+
+    private async void OnVolumeClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new VolumePage());
+    }
 }
