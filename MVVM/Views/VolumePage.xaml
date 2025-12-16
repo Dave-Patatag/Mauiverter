@@ -7,7 +7,7 @@
 
 
             <Grid Grid.Row="0"
-          BackgroundColor="Purple"
+          BackgroundColor="#9C27B0"
           Padding="16"
           ColumnDefinitions="Auto,*">
 
@@ -30,7 +30,7 @@
 
             <!-- Bit Section -->
             <Grid Grid.Row="1"
-                  BackgroundColor="SkyBlue"
+                  BackgroundColor="PeachPuff"
                   Padding="20"
                   RowDefinitions="*,Auto">
 
@@ -62,7 +62,7 @@
 
             <!-- Byte Section -->
             <Grid Grid.Row="2"
-                  BackgroundColor="#FFEDA9"
+                  BackgroundColor="PeachPuff"
                   Padding="20"
                   RowDefinitions="*,Auto">
 

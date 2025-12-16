@@ -83,7 +83,7 @@
 
             <Button Grid.Row="1" Grid.Column="1"
                 CornerRadius="10"
-                BackgroundColor="#EB6584"
+                BackgroundColor="LightPink"
                 ImageSource="temperature.png"
                 Text="Temperature"
                 TextColor="Black"
@@ -119,13 +119,12 @@
 
             <Button Grid.Row="2" Grid.Column="2"
                 CornerRadius="10"
-                BackgroundColor="LightPink"
+                BackgroundColor="#EB6584"
                 ImageSource="hourglass.png"
                 Text="Duration"
                 TextColor="Black"
                 ContentLayout="Top,18"
                 Padding="20"/>
         </Grid>
-
     </Grid>
 </ContentPage>

@@ -60,7 +60,7 @@
 
         <!-- Byte Section -->
         <Grid Grid.Row="2"
-              BackgroundColor="#FFEDA9"
+              BackgroundColor="Lightgreen"
               Padding="20"
               RowDefinitions="*,Auto">
 
